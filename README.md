@@ -1,38 +1,64 @@
-## Overview
-We present chromotherapy  in VR based on your level of brain's enjoyment matched to color. BCI + Chromotherapy
+# Expressive Emotion VR
+## Enhancing Emotional Expression through Personalized Chromotherapy in Virtual Reality
+
+<table>
+  <tr>
+    <td>
+      This project presents an innovative integration of chromotherapy within virtual reality (VR), utilizing brain-computer interfaces (BCIs) to tailor color experiences based on individual brain activity. This project combines the therapeutic principles of chromotherapy with real-time brain signal analysis to enhance emotional well-being.
+    </td>
+     <td>
+       <img src="https://github.com/user-attachments/assets/7bd76e40-80cf-4e93-a292-17c7face4c4e" alt="Expressive Emoetion" width="1500px">
+    </td>
+  </tr>
+
+</table>
 
 ## Inspiration
 
-*"It is impossible to study society—social life, public life, religious life—without taking into consideration emotional backgrounds, how emotions are provoked, how emotions are expressed, how emotions are displayed"*
+*"It is impossible to study society—social life, public life, religious life—without taking into consideration emotional backgrounds, how emotions are provoked, how emotions are expressed, how emotions are displayed."*
 
-Currently, it is difficult to find a platform that provides an environment for users to track their emotions, manage and express them. Typically platforms only allow users to do one or the other. We wanted to provide users with an opportunity to not only detect what emotions they are experiencing, but also a tool to relieve stress. We opted to use a tool that has long been used by humanity as a way of expressing emotions: art.
+Current platforms for emotional tracking and management often fall short in providing a comprehensive solution for both detecting and expressing emotions. Our goal was to create a platform that not only identifies user emotions but also offers a therapeutic tool to alleviate stress. Art, a timeless medium for emotional expression, serves as the cornerstone of our solution.
 
 *“Colors have certain biological and psychological effects on people, and I think it’s about time we start taking advantage of it” - Mohab Ibrahim, PhD, MD, associate professor of anesthesiology at the University of Arizona College of Medicine, Tucson*
 
-We also discovered that when it comes to chromotherapy (color therapy), it's difficult to know what colors better suit who considering the various different factors that affect that. We figured there was a way to manage  and to fix this problem by using brain signals. 
+In our exploration of chromotherapy, we found that identifying the most beneficial colors for individuals is complex due to the diverse factors influencing color perception and impact. By utilizing brain signals, we aimed to personalize and optimize this therapeutic approach.
 
-## What it does
+## Functionality
 
-We paired Arctop’s latest technology, Neuos and Oculus Quest 2 using the so they can work simultaneously to provide users with this immersive experience. Neous will read brain signals to personalize the experience for each user and Oculus Quest 2 will provide users with a means to express themselves through color and movement.
+Our project integrates Arctop’s cutting-edge Neuos technology (Muse BCI) with the Oculus Quest 2 to deliver an immersive, personalized experience. Neuos reads brain signals to tailor the VR environment, while the Oculus Quest 2 enables users to express themselves through color and movement.
 
-## How we built it
-We built it by integrating Arctop's SDK, which fetches brain signals using Neous. It provides three kinds of data with 5 calls per second. The three kinds of data are: Enjoyment, Focus and the Zone. We then send the data to the cloud through the app and listen to changes in this data with unity. We leverage the zone data and match this data to particular colors, which we calibrate at the beginning of the session. These colors are matched on a level of enjoyment from minimum enjoyment to maximum enjoyment. 
-While the user is in session we match their emotion to color as they are drawing in real time. They draw in Virtual Reality in a room with certain 3D objects that provide creativity.
+## Development Process
 
-## Challenges we ran into
-The major problem we experienced was integrating Arctop's SDK, considering it's a relatively new startup and the device uses an old bluetooth technology. However, we worked with the mentors and other developers working on the same obstacle to fix most of the issues. We later made this code available as Open Source code for anyone who might run into the same issues later.
+We integrated Arctop's SDK to fetch brain signals via Neuos, which provides data on enjoyment, focus, and the "zone" at a rate of five calls per second. This data is transmitted to the cloud and monitored in real-time using Unity. We calibrate colors to correspond with levels of enjoyment at the start of each session. During the session, users’ emotional states are mapped to specific colors as they create art in a virtual environment featuring 3D objects that stimulate creativity.
 
-## Accomplishments that we're proud of
-We are proud that we were able to execute this idea and create a mostly working prototype in the limited time. Most of us are also new to hackathons and the experienced hackers did a great job at guiding the new members through the process.
+### Data Collection and Analysis
 
-## What we learned
-We  learned to work with strangers to form a new product and regardless of having our own team, we worked with other teams to make open source code to make life easier for others in the future.
+The primary data collected includes three types of metrics: Enjoyment, Focus, and the Zone. These metrics are captured at a frequency of five times per second, providing granular insight into the user's emotional and cognitive state. The data is processed and analyzed to match specific colors to the user's enjoyment level, creating a dynamic and responsive chromotherapy experience.
 
-We learned that it was important to communicate thoroughly initially to set the foundation for the project. We then split up the project and used each person's skills to use our time efficiently.
+### Brain-Computer Interface (BCI) Integration
 
-We also learned about the challenges we can overcome when we come together. Bouncing ideas off everyone around the table was really eye opening for not only us, but everyone we interacted with.
+The BCI component of this project is critical, as it allows for real-time interpretation of brain signals. This integration ensures that the VR environment is continually adapted to the user's current emotional state, enhancing the effectiveness of the chromotherapy. The use of BCIs in this context represents a significant advancement in personalized therapeutic applications within VR.
 
-## What's next for Expressive Emotion VR
-If we had more time and resources we would have loved to create an app to accompany the experience. This app would allow users to save their art and track their emotions over time.
+## Challenges Encountered
 
+Our primary challenge was integrating Arctop's SDK due to its nascent stage and reliance on older Bluetooth technology. By collaborating with mentors and other developers, we overcame these obstacles and subsequently made our code open source to assist future developers facing similar issues.
 
+## Achievements
+
+We are proud of developing a functional prototype within a limited timeframe, particularly given that many team members were new to hackathons. Experienced participants successfully mentored newer members, facilitating a collaborative and productive environment.
+
+## Lessons Learned
+
+Through this project, we learned the importance of initial clear communication to establish a solid foundation. We effectively utilized individual skills by dividing tasks accordingly. Additionally, our collaborative efforts extended beyond our team, contributing to open-source solutions that benefit the wider developer community.
+
+## Future Directions for Expressive Emotion VR
+
+Given additional time and resources, we envision developing a companion app to enhance the user experience. This app would enable users to save their art and track their emotional trends over time, providing a comprehensive tool for emotional management and expression.
+
+### Potential Applications and Impact
+
+The integration of BCIs with chromotherapy in VR has far-reaching potential applications. It could be utilized in therapeutic settings to aid in the treatment of stress, anxiety, and other emotional disorders. Furthermore, the ability to track and analyze emotional trends over time could provide valuable insights for mental health professionals, leading to more personalized and effective treatment plans.
+
+## Conclusion
+
+This project demonstrates the potential of combining brain-computer interfaces with virtual reality to create personalized therapeutic experiences. By leveraging real-time brain signal analysis and chromotherapy, we have developed a tool that not only tracks but also enhances emotional well-being through creative expression. The success of this prototype lays the groundwork for further research and development in this promising field.
